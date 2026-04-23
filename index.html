@@ -12,8 +12,9 @@
         }
 
         main{
-            background-color: rgb(45, 163, 134, 0.2);
+            background-color: rgb(45, 163, 134, 0.1);
             margin: 0;
+            box-shadow: 0 4px 24px rgba(33, 133, 71, 0.1);
         }
 
         footer{
@@ -31,9 +32,8 @@
 
         header{
             display: flex;
-            box-shadow: 0 4px 24px rgba(33, 133, 71, 0.5);
+            box-shadow: 0 4px 24px rgba(33, 133, 71, 0.2);
             flex-direction: row;
-            background-color: ;
         }
 
         li{
@@ -47,12 +47,29 @@
             font-optical-sizing: auto;
             font-weight: 200;
             font-style: normal;
+            box-shadow: 0 4px 24px rgba(33, 133, 71, 0.1);
+            cursor: pointer;
         }
 
         nav ul{
             display: flex;
             gap: 40px;
             margin-left: 800px;
+            margin-top: 25px;
+        }
+
+        .title{
+            font-family: "Nunito", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            text-decoration: underline rgb(91, 182, 129);
+            display: flex;
+            justify-content: center;
+        }
+
+        button{
+            cursor: pointer;
         }
 
         .backdrop {
@@ -105,22 +122,22 @@
     <main>
 
         <section>
-            <h2 class="">Про нас</h2>
+            <h2 class="title">Про нас</h2>
             <button data-modal-open>Відкрити</button>
         </section>
 
         <section>
-            <h2>Напрямки</h2>
+            <h2 class="title">Напрямки</h2>
             <button data-modal-open2>Відкрити</button>
         </section>
 
         <section>
-            <h2>Поради</h2>
+            <h2 class="title">Поради</h2>
             <button data-modal-open3>Відкрити</button>
         </section>
 
         <section>
-            <h2>Контакти</h2>
+            <h2 class="title">Контакти</h2>
             <button data-modal-open4>Відкрити</button>
         </section>
 
