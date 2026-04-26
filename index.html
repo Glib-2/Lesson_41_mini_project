@@ -19,7 +19,12 @@
 
         footer{
             background-color: rgb(45, 163, 134, 0.4);
-            margin: 0;
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+            height: 200px;
+            text-align: center;
+            padding-left: 0;
         }
 
         .main_title {
@@ -65,7 +70,7 @@
             font-optical-sizing: auto;
             font-weight: 800;
             font-style: normal;
-            font-size: 30px;
+            font-size: 35px;
             text-decoration: underline rgb(91, 182, 129);
             display: flex;
             justify-content: center;
@@ -80,7 +85,7 @@
         }
 
         .hero{
-            background-color: rgb(45, 163, 134, 0.4);
+            background-color: rgb(45, 163, 134, 0.3);
             height: 350px;
         }
 
@@ -90,18 +95,78 @@
             font-weight: 1000;
             font-size: 40px;
             font-style: normal;
-            text-decoration: underline rgb(91, 182, 129);
         }
 
         button{
             color: white;
              background-color: rgb(45, 163, 134);
              border: 0px;
-            padding: 5px 5px 5px 5px;
+            padding: 8px 8px 8px 8px;
             z-index: 10;
             cursor: pointer;
             position: relative;
+            border-radius: 10px;
         }
+
+        strong{
+            font-family: "Nunito", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-size: 20px;
+            width: 400px;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .last{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin-left: 100px;  
+            width: 400px;
+            margin-top: 50px;
+        }
+
+        .tour{
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+        }
+        
+        .something{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            gap: 40px;
+        }
+
+        h3{
+            font-family: "Nunito", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-size: 20px;
+        }
+
+        .something_2{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            gap: 10px;
+        }
+
+        .idk{
+            margin-right: 1600px;
+        }
+
+       
+
+        .something_4{
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        
 
         .backdrop {
             position: fixed;
@@ -109,7 +174,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgb(91, 182, 129, 0.1);
+            background-color: rgb(91, 182, 129, 0.2);
             z-index: 100;
             
         }
@@ -124,15 +189,13 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-30%, -50%);
-            min-width: 400px;
-            min-height: 200px;
+            transform: translate(-45%, -50%);
+            min-width: 600px;
+            min-height: 350px;
             padding: 24px;
             background-color: #f2f2f2;
             border-radius: 8px;
             box-shadow: 0 4px 24px rgba(33, 133, 71, 0.5);
-           color: rgb(91, 182, 129);
-
         }
     </style>
 </head>
@@ -159,51 +222,95 @@
 
         <section>
             <h2 class="title">Про нас</h2>
-            <strong></strong>
+            <strong>Ми підбираємо найкращі тури та допомагаємо відкривати нові країни легко й комфортно.</strong>
             <button data-modal-open>Відкрити</button>
         </section>
 
         <section>
             <h2 class="title">Тури</h2>
+            <strong>Популярні напрямки для комфортного та доступного відпочинку.</strong>
             <button data-modal-open2>Відкрити</button>
         </section>
 
         <section>
             <h2 class="title">Гіди</h2>
+            <strong>Наші гіди — це люди, які допомагають у подорожах.</strong>
             <button data-modal-open3>Відкрити</button>
         </section>
 
         <section>
             <h2 class="title">Контакти</h2>
+            <strong>Зв’яжіться з нами з будь‑яких питань щодо подорожей.</strong>
             <button data-modal-open4>Відкрити</button>
         </section>
 
     </main>
 
     <footer>
-        <p>© 2026</p>
+        <div class="something_3">
+        <h3 class="idk">NorthWay</h3>
+        <div class="something_4">
+        <strong>support@northway.com</strong>
+        <strong>+38 (044) 355‑72‑90</strong>
+        </div>
+        </div>
     </footer>
-
-    <!-- МОДАЛКИ -->
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button data-modal-close>✕</button>
             <h2>Про нас</h2>
+            <strong class="last">NorthWay — це сервіс для мандрівників, який пропонує перевірені тури, зручне планування та підтримку на кожному етапі подорожі.</strong>
         </div>
     </div>
 
     <div class="backdrop is-hidden" data-modal2>
         <div class="modal">
             <button data-modal-close2>✕</button>
-            <h2>Напрямки</h2>
+            <h2>Топ 4 найкращі тури</h2>
+            <div class="something">
+            <div class="tour">
+                <img src="https://bynder.onthebeach.co.uk/cdn-cgi/image/width=1400,quality=60,fit=cover,format=auto/m/4a6bbd1435effae4/original/Street-View-Default.jpg" width="100px" height="80px">
+            <h3>Іспанія</h3>
+            </div>
+            <div class="tour">
+                <img src="https://content.tui.co.uk/adamtui/2024_4/11_13/aa55455f-cc37-458a-aded-b14f00e12a7a/LOC_000500_shutterstock_1541258303WebOriginalCompressed.jpg?i10c=img.resize(width:1080);img.crop(width:1080%2Cheight:608)" width="100px" height="80px">
+            <h3>Португалія</h3>
+            </div>
+            <div class="tour">
+                <img src="https://content.tui.co.uk/adamtui/2019_2/5_10/1d5cb3b0-1460-44b4-a946-a9eb00b50857/LOC_JPN_shutterstock_623451695WebOriginalCompressed.jpg?i10c=img.resize(width:1080);img.crop(width:1080%2Cheight:608)" width="100px" height="80px">
+            <h3>Японія</h3>
+            </div>
+            <div class="tour">
+                <img src="https://traveltalks.esky.pl/wp-content/uploads/2024/05/Plaza-Le-Morne-Mauritius-%C2%A9-Shutterstock.jpg" width="100px" height="80px">
+            <h3>Маврикій</h3>
+            </div>
+            </div>
         </div>
     </div>
 
     <div class="backdrop is-hidden" data-modal3>
         <div class="modal">
             <button data-modal-close3>✕</button>
-            <h2>Поради</h2>
+            <h2>Наша команда гідів</h2>
+            <div class="something_2">
+            <div class="person">
+                <img src="https://copilot.microsoft.com/th/id/BCO.71965395-4e5a-4934-b9fc-f727003d5bd4.png" width="100px" height="120px">
+            <h3>Назар Бондар</h3>
+            </div>
+            <div class="person">
+                <img src="https://copilot.microsoft.com/th/id/BCO.12531b55-2657-42ad-aabd-9060ff362b77.png" width="100px" height="120px">
+            <h3>Марк Коваленко</h3>
+            </div>
+            <div class="person">
+                <img src="https://copilot.microsoft.com/th/id/BCO.2df59e07-0058-4083-b001-38d44b1e868d.png" width="100px" height="120px">
+            <h3>Тимофій Савчук</h3>
+            </div>
+            <div class="person">
+                <img src="https://copilot.microsoft.com/th/id/BCO.5b760f7d-e52a-4947-bf4c-ab2d6890f98e.png" width="100px" height="120px">
+            <h3>Анна Дятлова</h3>
+            </div>
+            </div>
         </div>
     </div>
 
@@ -211,6 +318,14 @@
         <div class="modal">
             <button data-modal-close4>✕</button>
             <h2>Контакти</h2>
+            <div>
+                <h3>E-mail</h3>
+                <strong>support@northway.com</strong>
+            </div>
+            <div>
+                <h3>Телефон</h3>
+                <strong>+38 (044) 355‑72‑90</strong>
+            </div>
         </div>
     </div>
 
