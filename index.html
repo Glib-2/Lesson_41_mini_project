@@ -6,18 +6,17 @@
     <title>Travel Explorer</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
     <style>
-
-        body{
+        body {
             margin: 0;
         }
 
-        main{
+        main {
             background-color: rgb(45, 163, 134, 0.1);
             margin: 0;
             box-shadow: 0 4px 24px rgba(33, 133, 71, 0.1);
         }
 
-        footer{
+        footer {
             background-color: rgb(45, 163, 134, 0.4);
             display: flex;
             flex-direction: column;
@@ -36,18 +35,18 @@
             text-decoration: underline rgb(91, 182, 129);
         }
 
-        header{
+        header {
             display: flex;
             box-shadow: 0 4px 24px rgba(33, 133, 71, 0.2);
             flex-direction: row;
             margin-bottom: 20px;
         }
 
-        li{
+        li {
             list-style: none;
         }
 
-        a{
+        a {
             text-decoration: none;
             color: rgb(0, 0, 0);
             font-family: "Nunito", sans-serif;
@@ -58,14 +57,14 @@
             cursor: pointer;
         }
 
-        nav ul{
+        nav ul {
             display: flex;
             gap: 40px;
             margin-left: 800px;
             margin-top: 25px;
         }
 
-        .title{
+        .title {
             font-family: "Nunito", sans-serif;
             font-optical-sizing: auto;
             font-weight: 800;
@@ -77,19 +76,19 @@
             margin: 50px 0px 30px 0px;
         }
 
-        section{
+        section {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
         }
 
-        .hero{
+        .hero {
             background-color: rgb(45, 163, 134, 0.3);
             height: 350px;
         }
 
-        h1{
+        h1 {
             font-family: "Nunito", sans-serif;
             font-optical-sizing: auto;
             font-weight: 1000;
@@ -97,10 +96,10 @@
             font-style: normal;
         }
 
-        button{
+        button {
             color: white;
-             background-color: rgb(45, 163, 134);
-             border: 0px;
+            background-color: rgb(45, 163, 134);
+            border: 0px;
             padding: 8px 8px 8px 8px;
             z-index: 10;
             cursor: pointer;
@@ -108,7 +107,7 @@
             border-radius: 10px;
         }
 
-        strong{
+        strong {
             font-family: "Nunito", sans-serif;
             font-optical-sizing: auto;
             font-weight: 300;
@@ -118,55 +117,55 @@
             margin-bottom: 25px;
         }
 
-        .last{
+        .last {
             display: flex;
             justify-content: center;
             flex-direction: column;
-            margin-left: 100px;  
+            margin-left: 100px;
             width: 400px;
             margin-top: 50px;
         }
 
-        .tour{
+        .tour {
             display: flex;
             flex-direction: column;
             margin: 20px;
         }
-        
-        .something{
+
+        .something {
             display: flex;
             justify-content: center;
             flex-direction: row;
             gap: 40px;
         }
 
-        h3{
+        h3 {
             font-family: "Nunito", sans-serif;
             font-optical-sizing: auto;
             font-weight: 300;
             font-size: 20px;
         }
 
-        .something_2{
+        .something_2 {
             display: flex;
             justify-content: center;
             flex-direction: row;
             gap: 10px;
         }
 
-        .idk{
+        .idk {
             margin-right: 1600px;
         }
 
-       
 
-        .something_4{
+
+        .something_4 {
             display: flex;
             align-items: flex-start;
             flex-direction: column;
         }
 
-        
+
 
         .backdrop {
             position: fixed;
@@ -176,7 +175,7 @@
             height: 100%;
             background-color: rgb(91, 182, 129, 0.2);
             z-index: 100;
-            
+
         }
 
         .backdrop.is-hidden {
@@ -217,7 +216,7 @@
 
         <section class="hero">
             <h1>Твій шлях дo відпочинку</h1>
-            <button >Дізнатись більше</button>
+            <button>Дізнатись більше</button>
         </section>
 
         <section>
@@ -248,11 +247,11 @@
 
     <footer>
         <div class="something_3">
-        <h3 class="idk">NorthWay</h3>
-        <div class="something_4">
-        <strong>support@northway.com</strong>
-        <strong>+38 (044) 355‑72‑90</strong>
-        </div>
+            <h3 class="idk">NorthWay</h3>
+            <div class="something_4">
+                <strong>support@northway.com</strong>
+                <strong>+38 (044) 355‑72‑90</strong>
+            </div>
         </div>
     </footer>
 
@@ -260,7 +259,8 @@
         <div class="modal">
             <button data-modal-close>✕</button>
             <h2>Про нас</h2>
-            <strong class="last">NorthWay — це сервіс для мандрівників, який пропонує перевірені тури, зручне планування та підтримку на кожному етапі подорожі.</strong>
+            <strong class="last">NorthWay — це сервіс для мандрівників, який пропонує перевірені тури, зручне планування
+                та підтримку на кожному етапі подорожі.</strong>
         </div>
     </div>
 
@@ -269,22 +269,26 @@
             <button data-modal-close2>✕</button>
             <h2>Топ 4 найкращі тури</h2>
             <div class="something">
-            <div class="tour">
-                <img src="https://bynder.onthebeach.co.uk/cdn-cgi/image/width=1400,quality=60,fit=cover,format=auto/m/4a6bbd1435effae4/original/Street-View-Default.jpg" width="100px" height="80px">
-            <h3>Іспанія</h3>
-            </div>
-            <div class="tour">
-                <img src="https://content.tui.co.uk/adamtui/2024_4/11_13/aa55455f-cc37-458a-aded-b14f00e12a7a/LOC_000500_shutterstock_1541258303WebOriginalCompressed.jpg?i10c=img.resize(width:1080);img.crop(width:1080%2Cheight:608)" width="100px" height="80px">
-            <h3>Португалія</h3>
-            </div>
-            <div class="tour">
-                <img src="https://content.tui.co.uk/adamtui/2019_2/5_10/1d5cb3b0-1460-44b4-a946-a9eb00b50857/LOC_JPN_shutterstock_623451695WebOriginalCompressed.jpg?i10c=img.resize(width:1080);img.crop(width:1080%2Cheight:608)" width="100px" height="80px">
-            <h3>Японія</h3>
-            </div>
-            <div class="tour">
-                <img src="https://traveltalks.esky.pl/wp-content/uploads/2024/05/Plaza-Le-Morne-Mauritius-%C2%A9-Shutterstock.jpg" width="100px" height="80px">
-            <h3>Маврикій</h3>
-            </div>
+                <div class="tour">
+                    <img src="https://bynder.onthebeach.co.uk/cdn-cgi/image/width=1400,quality=60,fit=cover,format=auto/m/4a6bbd1435effae4/original/Street-View-Default.jpg"
+                        width="100px" height="80px">
+                    <h3>Іспанія</h3>
+                </div>
+                <div class="tour">
+                    <img src="https://content.tui.co.uk/adamtui/2024_4/11_13/aa55455f-cc37-458a-aded-b14f00e12a7a/LOC_000500_shutterstock_1541258303WebOriginalCompressed.jpg?i10c=img.resize(width:1080);img.crop(width:1080%2Cheight:608)"
+                        width="100px" height="80px">
+                    <h3>Португалія</h3>
+                </div>
+                <div class="tour">
+                    <img src="https://content.tui.co.uk/adamtui/2019_2/5_10/1d5cb3b0-1460-44b4-a946-a9eb00b50857/LOC_JPN_shutterstock_623451695WebOriginalCompressed.jpg?i10c=img.resize(width:1080);img.crop(width:1080%2Cheight:608)"
+                        width="100px" height="80px">
+                    <h3>Японія</h3>
+                </div>
+                <div class="tour">
+                    <img src="https://traveltalks.esky.pl/wp-content/uploads/2024/05/Plaza-Le-Morne-Mauritius-%C2%A9-Shutterstock.jpg"
+                        width="100px" height="80px">
+                    <h3>Маврикій</h3>
+                </div>
             </div>
         </div>
     </div>
@@ -294,22 +298,26 @@
             <button data-modal-close3>✕</button>
             <h2>Наша команда гідів</h2>
             <div class="something_2">
-            <div class="person">
-                <img src="https://copilot.microsoft.com/th/id/BCO.71965395-4e5a-4934-b9fc-f727003d5bd4.png" width="100px" height="120px">
-            <h3>Назар Бондар</h3>
-            </div>
-            <div class="person">
-                <img src="https://copilot.microsoft.com/th/id/BCO.12531b55-2657-42ad-aabd-9060ff362b77.png" width="100px" height="120px">
-            <h3>Марк Коваленко</h3>
-            </div>
-            <div class="person">
-                <img src="https://copilot.microsoft.com/th/id/BCO.2df59e07-0058-4083-b001-38d44b1e868d.png" width="100px" height="120px">
-            <h3>Тимофій Савчук</h3>
-            </div>
-            <div class="person">
-                <img src="https://copilot.microsoft.com/th/id/BCO.5b760f7d-e52a-4947-bf4c-ab2d6890f98e.png" width="100px" height="120px">
-            <h3>Анна Дятлова</h3>
-            </div>
+                <div class="person">
+                    <img src="https://copilot.microsoft.com/th/id/BCO.71965395-4e5a-4934-b9fc-f727003d5bd4.png"
+                        width="100px" height="120px">
+                    <h3>Назар Бондар</h3>
+                </div>
+                <div class="person">
+                    <img src="https://copilot.microsoft.com/th/id/BCO.12531b55-2657-42ad-aabd-9060ff362b77.png"
+                        width="100px" height="120px">
+                    <h3>Марк Коваленко</h3>
+                </div>
+                <div class="person">
+                    <img src="https://copilot.microsoft.com/th/id/BCO.2df59e07-0058-4083-b001-38d44b1e868d.png"
+                        width="100px" height="120px">
+                    <h3>Тимофій Савчук</h3>
+                </div>
+                <div class="person">
+                    <img src="https://copilot.microsoft.com/th/id/BCO.5b760f7d-e52a-4947-bf4c-ab2d6890f98e.png"
+                        width="100px" height="120px">
+                    <h3>Анна Дятлова</h3>
+                </div>
             </div>
         </div>
     </div>
